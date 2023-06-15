@@ -1,0 +1,399 @@
+/* -----------------------------------------------------------------------
+타이포그래피 설정
+----------------------------------------------------------------------- */
+
+/* @font-face -> 웹폰트 사용을 위한 지시어(directive) */
+/* html 파일과 같은 폴더에 들어있는 폰트 파일을 사용하는 경우 */
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url("fonts/Pretendard-Regular.otf") format("opentype");
+}
+/* 웹 상의 폰트 파일을 사용하는 경우 */
+@font-face {
+    font-family: "Cafe24Ssurround";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff") format("woff");
+}
+@font-face {
+    font-family: 'RixYeoljeongdo_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0px; padding: 0;
+    font-family: "Pretendard-Regular";
+    background-color:black;
+    /* background-color: rgb(163, 247, 219); */
+}
+
+
+/* -----------------------------------------------------------------------
+header 영역 - 로고, 메인메뉴
+----------------------------------------------------------------------- */
+#logo {
+    position: relative;
+    
+    top: 50px;
+    left:320px;
+    width: 100%;
+    height: 200px;
+    z-index: 10000;
+    font-size:120px;
+    color:white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#logo2 {
+    position: absolute;
+    
+    top: 360px;
+    left:520px;
+    width: 100%;
+    height: 200px;
+    z-index: 8000;
+    font-size:120px;
+    color:white;
+    font-family
+    :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#logo3 {
+    position: absolute;
+    
+    top: 1060px;
+    left:340px;
+    width: 100%;
+    height: 200px;
+    z-index: 10000;
+    font-size:120px;
+    color:white;
+    font-family
+    :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+    #logo3 a:hover {
+        text-decoration: underline;
+        color: blueviolet;
+    }
+    #logo3 p {
+        position: relative;
+        margin: 0 10px;
+        color:white;
+    
+    }
+    /* #navmenu 요소에 포함된 a 태그 스타일 설정 */
+    #logo3 a {
+        color:white;
+    }
+    #logo3 a:link {
+        text-decoration: none;
+    }
+#navmenu {
+    font-size:40px;
+    left:490px;
+    top:260px;
+    display: flex;
+    position: absolute;
+    color:white;
+}
+
+#navmenu p {
+    position: relative;
+    margin: 0 10px;
+    color:white;
+    text-align: center;
+    justify-content: center;
+}
+/* #navmenu 요소에 포함된 a 태그 스타일 설정 */
+#navmenu a {
+    color:white;
+}
+#navmenu a:link {
+    text-decoration: none;
+}
+#navmenu a:hover {
+    text-decoration: underline;
+    color: blueviolet;
+}
+#search {
+position:relative;
+    top: 90px;
+    left:500px;
+    display: flex;
+}
+
+/* -----------------------------------------------------------------------
+본문 영역
+----------------------------------------------------------------------- */
+
+
+#title {
+    font-family: "Cafe24Ssurround";
+    font-size: 10px;
+    color:white;
+    /*background-color: aquamarine;*/
+}
+#description {
+    position:relative;
+    top:-130px;
+    margin-left:1px;
+    left:370px;
+}
+#description_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0);
+    width: 356px;
+    top: 485px;
+    left: 371px;
+    height: 503px;
+}
+
+.text001 {
+    opacity: 0;
+    color: crimson;
+    text-align: center;
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#description_1:hover {
+    text-decoration:none;
+    background-color:rgb(0, 0, 0, 0.6);
+}
+
+#description_1:hover .text001 {
+        opacity:1.0;
+}
+
+#description2 {
+    position:relative;
+    top: 10px;
+   
+    left:330px;
+}
+#description_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0);
+    width: 456px;
+    top: 410px;
+    left: 800px;
+    height: 503px;
+}
+
+.text002 {
+    opacity: 0;
+    color: crimson;
+    text-align: center;
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#description_2:hover {
+    text-decoration:none;
+    background-color:rgb(0, 0, 0, 0.6);
+}
+
+#description_2:hover .text002 {
+        opacity:1.0;
+}
+#text {
+    position:relative;
+    
+    color:white;
+    font-size:50px;
+   
+}
+
+#more {
+    position:relative;
+    color:gray;
+    font-size:20px;
+    left:320px;
+    top:1390px;
+    
+}
+
+#more3 {
+    position:relative;
+    color:rgb(102, 102, 102);
+    font-size:70px;
+    left:1420px;
+    top:1240px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+#jay1 {
+    position:relative;
+    color:white;
+    font-size:40px;
+    left:950px;
+    top:60px;
+}
+
+#jay1 p {
+    position: relative;
+    margin: 0 10px;
+    color:white;
+
+}
+/* #navmenu 요소에 포함된 a 태그 스타일 설정 */
+#jay1 a {
+    color:white;
+}
+#jay1 a:link {
+    text-decoration: none;
+}
+#jay1 a:hover {
+    text-decoration: underline;
+    color: blueviolet;
+}
+#jay {
+    position:relative;
+    color:white;
+    font-size:40px;
+    left:1300px;
+    top:10px;
+    
+}
+
+#jay p {
+    position: relative;
+    margin: 0 10px;
+    color:white;
+
+}
+/* #navmenu 요소에 포함된 a 태그 스타일 설정 */
+#jay a {
+    color:white;
+}
+#jay a:link {
+    text-decoration: none;
+}
+#jay a:hover {
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    #header {
+        height: 160px;
+        transition: all 0.5s;
+        justify-content: center;
+    }
+    #logo {
+        
+        margin-left: 500px;
+        transform: translateX(-50%);
+        transition: all 0.5s;
+        top:50px;
+        font-family: "Pretendard-Regular";
+    height:50px;
+   
+    
+
+    }
+    #jay {
+        transition: all 0.5s;
+        transform: translateX(-50%);
+        flex-basis: 40%;
+      top:115px;
+      left:170%;
+  
+    }
+    #jay1 {
+       
+        transition: all 0.5s;
+        transform: translateX(-50%);
+        flex-basis: 40%;
+        padding: 0;
+        left:145%;
+        top:165px;
+    }
+    #logo2 {
+        transition: all 0.5s;
+        transform: translateX(-50%);
+        flex-basis: 40%;
+        left:101%;
+        top:270px;
+    }
+    #more {
+        transition: all 0.5s;
+        transform: translateX(-50%);
+        flex-basis: 40%;
+        
+    }
+    #more3 {
+        transition: all 0.5s;
+        transform: translateX(-50%);
+        flex-basis: 40%;
+    
+    }
+    #navmenu {
+        top:210px;
+        left: 70%;
+        transform: translateX(-50%);
+        padding: 0;
+        justify-content: center;
+        transition: all 0.5s;
+        flex-basis: 40%;
+      
+    }
+    #main-container {
+        width: 90%;
+        left: 30%;
+        transition: all 0.5s;
+        flex-basis: 40%;
+      
+    }
+    #description {
+        left: 34%;
+        top:-50px;
+        transition: all 0.5s;
+        flex-basis: 40%;
+    
+    }
+    #description2 {
+        left: 45%;
+        top:
+        transition: all 0.5s;
+        flex-basis: 40%;
+        
+    }
+    #title {
+        font-size: 10px;
+        transition: all 0.5s;
+        flex-basis: 40%;
+       
+    }
+    .picture-item {
+       flex-basis: 40%;
+       transition: all 0.5s;
+    }
+   #header {
+    left: 50%;
+    transform: translateX(-50%);
+    flex-basis: 40%;
+    transition: all 0.5s;
+   
+   }
+   #more3 {
+    left:164%;
+    top:1350px;
+   }
+   #description.img {
+;
+    
+   }
+}
